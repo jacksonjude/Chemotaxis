@@ -1,7 +1,7 @@
 final int NUM_BACTERIA = 100;
 
 ArrayList<Bacteria> bacteriaArray = new ArrayList<Bacteria>();
--void setup()
+void setup()
 {
   size(300, 300);
   for (int i = 0; i < NUM_BACTERIA; i++)
@@ -94,9 +94,6 @@ class Bacteria
 
   void walk()
   {
-    //x += (Math.random()*6) - 3;
-    //y += (Math.random()*6) - 3;
-
     float speed = 1.2;
 
     float xMult = (mouseX - x > 0) ? speed : -speed;
